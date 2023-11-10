@@ -1,6 +1,9 @@
 # techwens
 command to install package
 
+Get the repo :
+
+
 npm install 
 
 run 

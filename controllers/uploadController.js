@@ -29,9 +29,9 @@ const uploadController = (req, res) => {
     }
     try {
         const filePath = req.file.path;
-        res.json({ message: 'File uploaded successfully', filePath: filePath }); 
+        res.json({ sucess:true, message: 'File uploaded successfully', filePath: filePath }); 
     } catch (error) {
-        res.json({ message: 'File upload failed', msg: error.message }); 
+        res.json({sucess:false, message: `File upload failed- ${error.message}`  }); 
     }
 
   });

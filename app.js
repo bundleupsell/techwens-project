@@ -10,7 +10,8 @@ const port = 3000;
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', './public');
-
+app.use(express.static('public'));
+app.use('/uploads', express.static('uploads'));
 
 // Public routes
 app.get('/', (req, res) => {
